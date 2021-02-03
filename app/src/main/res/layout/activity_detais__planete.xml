@@ -114,4 +114,16 @@
         app:srcCompat="@drawable/speech_icon"
         tools:ignore="MissingConstraints" />
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="232dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="93dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/astro" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

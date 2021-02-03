@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/nbre_questions"
         android:layout_width="64dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
@@ -43,21 +43,19 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="32dp"
         android:gravity="center"
-        android:text="Question de quiz"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        app:layout_constraintTop_toBottomOf="@+id/nbre_questions" />
 
     <TextView
         android:id="@+id/verif_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="verification de question "
         android:textColor="#bfb304"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,9 +70,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/ar_button"
+        android:background="@drawable/score_bg"
         android:gravity="center"
-        android:text="Option 1 "
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,9 +86,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/ar_button"
+        android:background="@drawable/score_bg"
         android:gravity="center"
-        android:text="Option 3"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,9 +102,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/ar_button"
+        android:background="@drawable/score_bg"
         android:gravity="center"
-        android:text="Option 2"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,7 +119,7 @@
         android:layout_marginTop="148dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintStart_toEndOf="@+id/nbre_questions"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_time" />
 
@@ -133,7 +128,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="1:00"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"

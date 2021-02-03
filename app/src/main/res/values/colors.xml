@@ -19,4 +19,7 @@
     <color name="NeptuneColor">#3f7ccf</color>
     <color name="PlutonColor">#cbb9ab</color>
 
+    <color name="vrai">#4CAF50</color>
+    <color name="faux">#F44336</color>
+
 </resources>

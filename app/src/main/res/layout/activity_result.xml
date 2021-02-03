@@ -13,9 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Rèsultat"
+        android:text="Rèsultats"
         android:textColor="#bfb304"
-        android:textSize="30sp"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -33,10 +33,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/resultat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="100%"
         android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -54,7 +53,7 @@
         android:text="Questions corrects"
         android:textColor="#B5AFAF"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView32"
+        app:layout_constraintEnd_toStartOf="@+id/correct_nbre"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progressBar4" />
@@ -68,50 +67,49 @@
         android:text="Questions non corrects"
         android:textColor="#B5AFAF"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView33"
+        app:layout_constraintEnd_toStartOf="@+id/ncorrect_nbtre"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/correct_nbre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="40dp"
-        android:text="10"
-        android:textColor="#B5AFAF"
-        android:textSize="30sp"
+        android:layout_marginEnd="48dp"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progressBar4" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/ncorrect_nbtre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="36dp"
-        android:text="10"
-        android:textColor="#B5AFAF"
-        android:textSize="30sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="#F44336"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/correct_nbre" />
 
     <TextView
-        android:id="@+id/textView34"
-        android:layout_width="match_parent"
-        android:layout_height="51dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/input_bg"
+        android:id="@+id/retour_text"
+        android:layout_width="263dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/score_bg"
         android:gravity="center"
-        android:text="Retourner Acceuil"
-        android:textColor="#bfb304"
+        android:text="Quittez"
+        android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+        app:layout_constraintTop_toBottomOf="@+id/ncorrect_nbtre" />
 </androidx.constraintlayout.widget.ConstraintLayout>
