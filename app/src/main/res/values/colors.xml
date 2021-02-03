@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#f2e205</color>
+    <color name="purple_500">#f2e205</color>
+    <color name="purple_700">#FF000000</color>
+    <color name="teal_200">#f2e205</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="terreColor">#004778</color>
+    <color name="MercureColor">#c4a473</color>
+    <color name="VénusColor">#b85802</color>
+    <color name="MarsColor">#894409</color>
+    <color name="JupiterColor">#f2cbaa</color>
+    <color name="SaturneColor">#b77b45</color>
+    <color name="UranusColor">#a5d6dd</color>
+    <color name="NeptuneColor">#3f7ccf</color>
+    <color name="PlutonColor">#cbb9ab</color>
+
+</resources>

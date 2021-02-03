@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "380781953966",
+    "project_id": "space-quiz-4cbc1",
+    "storage_bucket": "space-quiz-4cbc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380781953966:android:4cb87be2c550c30c24be3f",
+        "android_client_info": {
+          "package_name": "com.example.spacequizz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380781953966-k4eileqctr1qgdmg6rud7tdko4qgmstj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqK-jbWroyeXrejwxQk0T9l19YhLtYSgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380781953966-k4eileqctr1qgdmg6rud7tdko4qgmstj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
