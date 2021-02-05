@@ -8,9 +8,14 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.spacequizz.Fragments.QuizFragment;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class ResultActivity extends AppCompatActivity {
     TextView mResultat , mCorrect ,mWrong , mRetour ;
+    FirebaseAuth mAuth ;
+    DatabaseReference reference ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +38,12 @@ public class ResultActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
+        //save score firebase
+        mAuth= FirebaseAuth.getInstance();
+        reference = FirebaseDatabase.getInstance().getReference("users").child(mAuth.getCurrentUser().getUid());
+        reference.child("score").setValue(intent.getStringExtra("result")+"%");
 
 
 

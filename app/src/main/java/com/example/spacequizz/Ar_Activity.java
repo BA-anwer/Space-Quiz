@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+
 import com.google.ar.core.Anchor;
 import com.google.ar.core.HitResult;
 import com.google.ar.core.Plane;
@@ -19,8 +23,10 @@ import com.google.ar.sceneform.ux.TransformableNode;
 public class Ar_Activity extends AppCompatActivity {
      ArFragment arFragment;
      ModelRenderable materialTexture;
-     MediaPlayer media ;
+      MediaPlayer media ;
+      ImageView back ;
      int texture_planete ;
+
 
 
 
@@ -76,13 +82,6 @@ public class Ar_Activity extends AppCompatActivity {
                 break;}
 
         }
-
-
-
-
-
-
-
         Texture.builder()
                 .setSource(this, texture_planete)
                 .build()
@@ -118,6 +117,17 @@ public class Ar_Activity extends AppCompatActivity {
 
                 }
         );
+
+        //Back to Planet Activity
+        back=findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
     }
 
     @Override

@@ -1,13 +1,32 @@
 package model;
 
 public class User {
-    String name , age , email , motPasse ;
+    String name , age , email , motPasse ,score,niveau;
 
-    public User(String name, String age, String email, String motPasse) {
+    public User(String name, String age, String email, String motPasse,String score,String niveau) {
         this.name = name;
         this.age = age;
         this.email = email;
         this.motPasse = motPasse;
+        this.score=score;
+        this.niveau=niveau;
+    }
+
+
+    public String getScore() {
+        return score;
+    }
+
+    public void setScore(String score) {
+        this.score = score;
+    }
+
+    public String getNiveau() {
+        return niveau;
+    }
+
+    public void setNiveau(String niveau) {
+        this.niveau = niveau;
     }
 
     public String getName() {

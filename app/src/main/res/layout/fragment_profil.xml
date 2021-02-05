@@ -210,11 +210,11 @@
         android:text=":"
         android:textColor="#B5AFAF"
         android:textSize="60sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintEnd_toStartOf="@+id/score"
         app:layout_constraintTop_toBottomOf="@+id/compte_title" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/score"
         android:layout_width="139dp"
         android:layout_height="72dp"
         android:layout_marginEnd="36dp"
@@ -230,6 +230,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <RadioGroup
+        android:id="@+id/levelGroup"
         android:layout_width="336dp"
         android:layout_height="70dp"
         android:layout_marginTop="72dp"
@@ -241,16 +242,17 @@
         tools:ignore="MissingConstraints">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/niveau1"
             android:layout_width="117dp"
             android:layout_height="wrap_content"
+            android:checked="false"
             android:text="Dèbutant"
             android:textColor="#FFFCFC"
             android:textSize="18sp"
             android:textStyle="normal" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/niveau2"
             android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -259,7 +261,7 @@
             android:textSize="18sp" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/niveau3"
             android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -281,6 +283,17 @@
         app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="232dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/astro" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
