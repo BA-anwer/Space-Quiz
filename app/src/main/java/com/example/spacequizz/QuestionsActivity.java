@@ -25,14 +25,16 @@ import model.User;
 
  public class QuestionsActivity extends AppCompatActivity {
     TextView mQuestions, mOption1, mOption2, mOption3, verif_question, timer, nbre_question;
-    int total = 0;
+     int total = 0;
     int correct = 0;
     int wrong = 0;
     DatabaseReference reference;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions);
 
@@ -224,7 +226,6 @@ import model.User;
             });
         }
     }
-
     public void reserveTimer(int seconde, final TextView timer) {
         new CountDownTimer(seconde * 1000 + 1000, 1000) {
             @Override
@@ -242,7 +243,7 @@ import model.User;
                     Intent intent = new Intent(QuestionsActivity.this, ResultActivity.class);
                     intent.putExtra("result", String.valueOf((correct * 10)));
                     intent.putExtra("correct", String.valueOf(correct));
-                    intent.putExtra("wrong", String.valueOf(wrong));
+                   intent.putExtra("wrong", String.valueOf(wrong));
                     startActivity(intent);
                     finish();
                 }

@@ -104,7 +104,7 @@ public class RegisterActivity extends AppCompatActivity {
                     String userId = firebaseUser.getUid();
                     reference = FirebaseDatabase.getInstance().getReference().child("users").child(userId);
 
-                    User user = new User(name,age,email,motPasse,"0","Debutant");
+                    User user = new User(name,age,email,motPasse,"0%");
                     reference.setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {

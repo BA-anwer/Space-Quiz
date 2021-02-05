@@ -180,6 +180,7 @@
         android:layout_marginTop="52dp"
         android:text="Dèconnexion"
         android:textColor="#BFB304"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.812"
         app:layout_constraintStart_toEndOf="@+id/compte_title"
@@ -221,68 +222,12 @@
         android:layout_marginBottom="60dp"
         android:background="@drawable/score_bg"
         android:gravity="center"
-        android:text="0%"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_deconnexion"
         app:layout_constraintVertical_bias="1.0" />
-
-    <RadioGroup
-        android:id="@+id/levelGroup"
-        android:layout_width="336dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="72dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.586"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        tools:ignore="MissingConstraints">
-
-        <RadioButton
-            android:id="@+id/niveau1"
-            android:layout_width="117dp"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Dèbutant"
-            android:textColor="#FFFCFC"
-            android:textSize="18sp"
-            android:textStyle="normal" />
-
-        <RadioButton
-            android:id="@+id/niveau2"
-            android:layout_width="105dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Amateur"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-
-        <RadioButton
-            android:id="@+id/niveau3"
-            android:layout_width="105dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Avancè"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/title4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Niveau"
-        android:textColor="#B5AFAF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <ImageView
         android:id="@+id/imageView13"
